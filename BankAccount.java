@@ -14,6 +14,7 @@ public class BankAccount
 	{
 		name = yourName;
 		accNum = account;
+		balance = 0;
 	}
 	public BankAccount(String yourName, int account, double money)
 	{
@@ -34,10 +35,10 @@ public class BankAccount
 	{
 		return balance;
 	}
+	
+	//how to make a toString
 	public String toString()
 	{
-		return name;
-		return "" + accNum;
-		return "" + balance;
+		return "name: " + name + "\taccNum: "+ accNum + "\tBalance: "+ balance;
 	}
 }
